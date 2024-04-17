@@ -1,0 +1,43 @@
+
+#fondo {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    opacity: 0.1; 
+    z-index: -0; 
+  }
+body {
+    background-color: #1d1c1c; 
+    color:rgb(124, 124, 124);
+    position: relative;
+  }
+.container {
+    max-width: 400px;
+    margin: auto auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(238, 104, 104, 0.1);
+    
+  }
+h2,p {
+    text-align: center;
+    
+  }
+.center-button {
+    text-align: center;
+    position: relative;
+}
+input {
+    background-color: rgb(177, 175, 175); /* Cambia el color del texto a rojo */
+    position: relative;
+}
+app-footer {
+    position: relative;
+  }
+a{
+    position: relative;
+}
+
+
+  
