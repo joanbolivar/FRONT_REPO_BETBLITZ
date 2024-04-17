@@ -1,6 +1,159 @@
-<div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>soporteycontacto</title>
+  <link rel="stylesheet" href="contact.component.css">
+  <style>
+    body{margin: 0;
+    }
+    .contenedor-principal {
+      display:flex;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .contenedor-principal_izquierda{
+      background: rgba(128, 128, 128, 0.137);
+      padding: 60px;
+      border-right: 1px solid rgba(255, 255, 255, 0.219);
+    }
+    .contenedor-principal_derecha{
+      background: rgba(243, 242, 242, 0.301);
+      padding: 60px;
+      border-right: 1px solid rgba(255, 255, 255, 0.219);
+    }
+    .contenedor{
+        display: flex;
+        background-size: cover;
+        height: 100;
+    }
+    .right{
+        background-color: rgba(83, 83, 83, 0.089);
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        text-align: right;
+    }
 
+  </style>
+</head>
+<body>
+<div class="contenedor-principal">
+  <div class="contenedor-principal_izquierda">
+      <p>
+        <div class="card" style="width: 40rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <ins><h3 class="card-title">Contactenos</h3></ins>
+            <p class="card-text"> Si deseas consultar mayor informacion sobre nuestros servicios  o tienes alguna duda al respecto, no dudes en contactarnos, diligencia el formulario y uno de nuestros agentes te contactara a la brevedad.</p>
+            <a href="#" class="btn btn-primary stretched-link">Ir a formulario de Contacto</a>
+          </div>
+        </div>
+        </p>
+        <br>
+        <br>
+            <h1> <ins>Soporte Tecnico </ins></h1>
+            <br
+            <br>
+            <p>Contactanos via Whatsapp</p> 
+        <br>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Para fallos con tu ingreso y registro Comunicate al siguiente </label> <a href="https://wa.me/573228663240 ">Whatsapp</a>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" Ing. Fabian Bermudez"> <a href="https://wa.me/573228663240/?text=Para%20fallos%20con tu ingreso" target="_blank">
+              <img src="logo.png" width="50" height="50">
+              </a>
+      </div>
+      <br>
+      <br>
+      <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Para fallos con pago de premios -  Comunicate al siguiente    </label> <a href="https://wa.me/573217576548">Whatsapp</a>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ing. Joan Bolivar"> <a href="https://wa.me/573217576548/?text=Para%20fallos%20con pago de premios" target="_blank">
+              <img src="logo.png" width="50" height="50">
+              </a>
+      </div>
+      <br>
+      <br>
+      <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Para fallos con recargas y saldos  -  Comunicate al siguiente    </label> <a href="https://wa.me/573218787650">Whatsapp</a>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ing. Maicol Ocampo"> <a href="https://wa.me/573218787650/?text=Para%20fallos%20con recargas y saldos" target="_blank">
+              <img src="logo.png" width="50" height="50">
+              </a>
+      </div>
+      <br>
+      <br>
+      <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Para fallos al realizar las apuestas  -  Comunicate al siguiente    </label> <a href="https://wa.me/573144338984">Whatsapp</a>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ing. Nicolas Cruz"> <a href="https://wa.me/573144338984/?text=Para%20fallos%20con apuestas" target="_blank">
+              <img src="logo.png" width="50" height="50">
+              </a>
+      </div>
+      <br>
+      <br>
+      <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Para otro tipo de fallos, no catalogados Comunicate al siguiente    </label> <a href="https://wa.me/573168270068">Whatsapp</a>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ing. Yorlandi Grajales"> <a href="https://wa.me/573168270068/?text=Para%20otros%20fallos" target="_blank">
+              <img src="logo.png" width="50" height="50">
+              </a>
+    </div>
+    <br>
+  </div>
+<div class="contenedor-principal">
+    <div class="contenedor-principal_derecha">
+        <>
+            <h1><center><ins>Contacto</ins></center></h1>
+                <br>
+                <br>
+                <<h2>Quieres saber mas?</h2>
+                <br>
+                <br>
+                <br>
+              <p> Por favor ingresa los siguientes datos</p>
+              <br>
+              <div id="after_submit"></p>
+                <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                  <div class="row">
+                      <label class="required" for="name">Nombre y Apellido:</label><br />
+                      <input id="name" class="input" name="name" type="text" value="" size="40" /><br />
+                      <span id="name_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                      <label class="required" for="email">Email:</label><br />
+                      <input id="email" class="input" name="email" type="text" value="" size="40" /><br />
+                      <span id="email_validation" class="error_message"></span>
+                  </div>
+                <div class="row">
+                      <label class="required" for="email">Telefono de contacto:</label><br />
+                      <input id="email" class="input" name="Telefono" type="text" value="" size="40" /><br />
+                      <span id="Telefono_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                      <label class="required" for="email">Asunto:</label><br />
+                      <input id="email" class="input" name="email" type="text" value="" size="40" /><br />
+                      <span id="email_validation" class="error_message"></span>
+                    </div>
+                  <div class="row">
+                      <label class="required" for="message">Mensaje:</label><br />
+                      <textarea id="message" class="input" name="message" rows="7" cols="40"></textarea><br />
+                      <span id="message_validation" class="error_message"></span>
+                    </div>
+                <br>
+                <input id="submit_button" type="submit" value="Enviar formulario de contacto" />
+                </form>
+                <br>
+                <br>
+                </br>
+                <center><h3>Gracias por contactarnos</h3></center>  
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <address><center><strong> CL. 57 #3-00 este, Bogotá</strong> </center></address>
+                <p><center> <strong>Telefono:01-800-0180779 </strong><center></Tel></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
   <app-footer></app-footer>
