@@ -23,7 +23,7 @@ La aplicación está desarrollada utilizando Angular 17 como framework principal
 Para ejecutar esta aplicación localmente, sigue estos pasos:
 
 1. ✌️ Clona el repositorio:
-git clone
+git clone https://github.com/joanbolivar/FRONT_REPO_BETBLITZ.git
 
 2. ⛵ Navega al directorio del proyecto:
 cd betblitz-app
