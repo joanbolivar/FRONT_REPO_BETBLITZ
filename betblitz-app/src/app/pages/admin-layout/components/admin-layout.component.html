@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="row min-vh-100 flex-column flex-md-row">
+      <div class="col-md-3 col-xl-2 p-0 bg-dark">
+        <app-side-bar></app-side-bar>
+      </div>
+      <div class="col-md-9 col-xl-10 p-0 bg-light-subtle">
+        <div class="d-flex flex-column" style="height: 100%;">
+          <main class="flex-shrink-0">
+            <router-outlet></router-outlet>
+          </main>
+          <footer class="mt-auto">
+            <app-footer></app-footer>
+          </footer>
+        </div>
+      </div>
+    </div>
+</div>

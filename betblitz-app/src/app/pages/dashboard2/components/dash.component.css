@@ -1,0 +1,10 @@
+.btn {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

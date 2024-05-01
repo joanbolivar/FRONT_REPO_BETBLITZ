@@ -1,10 +1,22 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './modules/home/components/home.component';
-import { ContactComponent } from './modules/contact/components/contact.component';
+import { RegistroComponent } from './pages/registro/components/registo.component';
+import { HomeComponent } from './pages/home/components/home.component';
+import { ContactComponent } from './pages/contact/components/contact.component';
 
 
 export const routes: Routes = [
-    { path: 'home', component: HomeComponent },
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    {path:'contact', component: ContactComponent}
+  {
+    path: 'betbliz',
+    children: [
+      { path: 'home', component: HomeComponent },
+      { path: 'contact', component: ContactComponent },
+      { path: 'registro', component: RegistroComponent },
+      {
+        path: 'dashboard',
+        loadChildren: () => import('./pages/admin-layout/admin.routes').then(m => m.ADMIN_ROUTES)
+      },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+    ]
+  }
+
 ];
