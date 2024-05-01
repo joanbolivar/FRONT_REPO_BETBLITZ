@@ -4,14 +4,16 @@ import { AdminLayoutComponent } from './components/admin-layout.component';
 import { ContactComponent } from '../contact/components/contact.component';
 import { AdminBetsComponent } from '../adminBets/components/admin-bets.component';
 import { UserBetsComponent } from '../user-bets/components/user-bets.component';
+import { ResultsComponent } from '../results/results.component';
 
 export const ADMIN_ROUTES: Routes = [
     {
         path: '', component: AdminLayoutComponent, children: [
             { path: '', component: DashComponent },
-            { path: 'contact', component: ContactComponent },
+            { path: 'soporte', component: ContactComponent },
             { path: 'admin', component: AdminBetsComponent },
-            { path: 'user-bets', component: UserBetsComponent }
+            { path: 'apuestas', component: UserBetsComponent },
+            { path: 'resultados', component:ResultsComponent}
         ]
     }
 ];
