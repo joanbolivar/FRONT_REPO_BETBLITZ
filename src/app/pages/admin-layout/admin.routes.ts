@@ -1,4 +1,4 @@
-import { DashComponent } from './../dashboard2/components/dash.component';
+import { DashComponent } from './../dashboard/components/dashboard.component';
 import { Routes } from "@angular/router";
 import { AdminLayoutComponent } from './components/admin-layout.component';
 import { ContactComponent } from '../contact/components/contact.component';
@@ -8,7 +8,8 @@ import { ResultsComponent } from '../results/results.component';
 
 export const ADMIN_ROUTES: Routes = [
     {
-        path: '', component: AdminLayoutComponent, children: [
+        path: '', component: AdminLayoutComponent,
+        children: [
             { path: '', component: DashComponent },
             { path: 'soporte', component: ContactComponent },
             { path: 'admin', component: AdminBetsComponent },

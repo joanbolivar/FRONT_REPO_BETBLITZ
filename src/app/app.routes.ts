@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { RegistroComponent } from './pages/registro/components/registo.component';
+import { RegistroComponent } from './pages/registro/components/registro.component';
 import { HomeComponent } from './pages/home/components/home.component';
 import { ContactComponent } from './pages/contact/components/contact.component';
 

@@ -1,22 +1,25 @@
+
 <div class="row align-items-center bg-secondary">
   <div class="col-4">
     <img src="../../../../assets/images/logo-betblitz.png" alt="" class="">
   </div>
   <div class="col-8">
-    <div class="d-flex">
-      <div class="mb-3 me-3 flex-grow-1">
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Correo electrónico/Cédula">
+    <form [formGroup]="login" (ngSubmit)="onSubmit(login)">
+      <div class="d-flex">
+        <div class="mb-3 me-3 flex-grow-1">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Correo electrónico/Cédula" formControlName="emailDocument">
+        </div>
+        <div class="mb-3 me-3">
+          <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Contraseña" formControlName="password">
+        </div>
+        <div class="mb-3 me-3">
+          <button type="button" class="btn btn-success" type="submit" [disabled]="login.invalid">Ingresar</button>
+        </div>
+        <div class="mb-3 me-3">
+          <a href="betbliz/registro" class="btn btn-primary">Registrarse</a>
+        </div>
       </div>
-      <div class="mb-3 me-3">
-        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Contraseña">
-      </div>
-      <div class="mb-3 me-3">
-        <button type="button" class="btn btn-success">Ingresar</button>
-      </div>
-      <div class="mb-3 me-3">
-        <a href="/registro" class="btn btn-primary">Registrarse</a>
-      </div>
-    </div>
+    </form>
   </div>
 </div>
 
