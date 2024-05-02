@@ -13,4 +13,8 @@ export class UserService {
   changeUser(name: string) {
     this.userSource.next(name);
   }
+
+  logout() {
+    this.userSource.next(null);
+  }
 }
