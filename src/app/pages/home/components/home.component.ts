@@ -30,7 +30,7 @@ export class HomeComponent {
 
     onSubmit(login: FormGroup) {
         console.log(this.login.value);
-            this._http.get<any>('http://localhost:3000/signup')
+            this._http.get<any>('https://back-repo-betblitz-2.onrender.com/signup')
                 .subscribe(res => {
                     console.log(res);
                    

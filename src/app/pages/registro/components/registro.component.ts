@@ -38,7 +38,7 @@ export class RegistroComponent implements OnInit{
     this.submitted = true;
     console.log(this.signup.value);
    if(singup.valid){
-    this._http.post('http://localhost:3000/signup', this.signup.value).subscribe(
+    this._http.post('https://back-repo-betblitz-2.onrender.com/signup', this.signup.value).subscribe(
       (response: any) => {
         console.log("Registro exitoso");
         this.signup.reset();
